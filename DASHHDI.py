@@ -10,7 +10,7 @@ cf.go_offline()
 #----------------------------------------CARGA DE DATOS------------------------------------------
 
 path = 'BDEx.xlsx'
-dataKW = pd.read_excel(path)
+dataKW = pd.read_excel(path,engine='openpyxl')
 
 dataORG = pd.read_excel(path,sheet_name='organic')
 

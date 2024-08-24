@@ -2,3 +2,4 @@ streamlit
 pandas
 cufflinks
 openpyxl
+plotly
