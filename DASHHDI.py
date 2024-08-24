@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import cufflinks as cf
-
+import openpyxl
 
 # Configurar cufflinks para trabajar con plotly
 cf.go_offline()
