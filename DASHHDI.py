@@ -1,13 +1,8 @@
 #Libreri­as
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
 import cufflinks as cf
-import plotly.offline as pyo
-import altair as alt
-from stqdm import stqdm
-import plotly.graph_objects as go
+
 
 # Configurar cufflinks para trabajar con plotly
 cf.go_offline()
@@ -437,15 +432,7 @@ st.markdown("""
         justify-content: center;
         margin: 20px 0; /* Espacio arriba y abajo de la imagen */
     }
-    .footer-text {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 14px;
-}
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -466,11 +453,7 @@ with container1:
 # Agregar una barra lateral
 st.sidebar.markdown('<h1 style="color: #ffffff;">Filtros</h1>', unsafe_allow_html=True)
 filtro = st.sidebar.selectbox("Filtrar por:", ["Usuarios", "Sesiones"])
-st.sidebar.markdown("""
-    <div class="footer-text">
-        Fuente: Google Analytics & Google Search Consoles
-    </div>
-""", unsafe_allow_html=True)
+
 
 # Contenedor para las gráficas inferiores
 container2 = st.container()
